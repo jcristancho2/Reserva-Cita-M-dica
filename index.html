@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Reserva de Cita Médica Campusland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #2a5d9f;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #2a5d9f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d467d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Reserva de Cita Médica</h2>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre del paciente:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora de la cita:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="medico">Especialidad del médico:</label>
+        <select id="medico" name="medico" required>
+            <option value="">Seleccione una opción</option>
+            <option value="pediatra">Pediatra</option>
+            <option value="dentista">Dentista</option>
+            <option value="general">General</option>
+            <option value="dermatologo">Dermatólogo</option>
+            <option value="oftalmologo">Oftalmólogo</option>
+            <option value="ginecologo">Ginecólogo</option>
+            <option value="traumatologo">Traumatólogo</option>
+            <option value="psicologo">Psicólogo</option>
+            <option value="nutriologo">Nutriólogo</option>
+            <option value="cardiologo">Cardiólogo</option>
+            <option value="neumologo">Neumólogo</option>
+            <option value="otorrinolaringologo">Otorrinolaringólogo</option>
+            <option value="endocrinologo">Endocrinólogo</option>
+            <option value="urologo">Urólogo</option>
+            <option value="gastroenterologo">Gastroenterólogo</option>
+            <option value="oncologo">Oncólogo</option>
+            <option value="hematologo">Hematólogo</option>
+            <option value="reumatologo">Reumatólogo</option>
+            <option value="neurocirujano">Neurocirujano</option>
+            <option value="cirujano">Cirujano</option>
+            <option value="traumatologo">Traumatólogo</option>
+            <option value="pneumologo">Pneumólogo</option>
+            <option value="psiquiatra">Psiquiatra</option>
+            <option value="geriatrico">Geriátrico</option>
+            <option value="rehabilitacion">Rehabilitación</option>
+            <option value="medicina_familiar">Medicina Familiar</option>
+            <option value="medicina_interna">Medicina Interna</option>
+        </select>
+
+        <label for="sintomas">Descripción de los síntomas:</label>
+        <textarea id="sintomas" name="sintomas" rows="4" required></textarea>
+
+        <input type="submit" value="Reservar Cita">
+    </form>
+
+</body>
+
+</html>
